@@ -1,0 +1,26 @@
+.breadcrumbs
+  flex-basis: 7%
+  display: flex
+  justify-content: center
+  align-items: center
+
+  +gt-xs
+    display: none
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    flex-direction: row
+
+  &__item
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    border: 1px solid $white
+    background: $white
+    margin: 0 11px
+
+    &_active
+      background: transparent

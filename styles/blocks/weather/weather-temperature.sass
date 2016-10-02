@@ -1,0 +1,38 @@
+.weather-temperature-wrapper
+  flex-basis: 30%
+  order: -2
+  display: flex
+  justify-content: center
+  align-items: center
+
+  +gt-xs
+    flex-basis: 18%
+    order: -1
+
+.weather-temperature
+  position: relative
+
+  &__degree
+    &_day
+      font-size: 200px
+
+      +gt-xs
+        font-size: 100px
+
+    &_night
+      font-size: 34px
+
+      +gt-xs
+        font-size: 28px
+
+  &__night
+    position: absolute
+    right: -55px
+    bottom: 40px
+
+    +gt-xs
+      bottom: 18px
+
+  &__header
+    +gt-xs
+    font-size: 18px

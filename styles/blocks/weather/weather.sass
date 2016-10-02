@@ -1,0 +1,108 @@
+.weather
+  flex-grow: 1
+  display: flex
+
+  +gt-sm
+    flex-basis: 64%
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    flex-direction: row
+    flex-grow: 1
+
+  &__item
+    display: none
+    flex-direction: column
+    padding: 40px
+    position: relative
+
+    +gt-xs
+      display: flex
+      flex-basis: 33.33%
+
+    +sm
+      padding: 40px 20px
+
+    &_today
+      display: flex
+      flex-basis: 100%
+      background-color: $salmon
+
+      +gt-xs
+        flex-basis: 33.33%
+        background-color: $green
+
+    &_tomorrow
+      background-color: $blue
+
+    &_after_tomorrow
+      background-color: $violet
+
+  &__header
+    flex-basis: 12%
+    order: -3
+    line-height: 1.2rem
+    margin: -40px -40px 0
+    padding: 20px 40px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+
+    +gt-xs
+      flex-basis: 17%
+      background-color: $black
+      flex-direction: column
+      justify-content: center
+
+    +sm
+      margin: -40px -20px 0
+
+    +gt-sm
+      min-height: 180px
+      padding: 40px 40px 10px 40px
+
+  &__day-wrapper
+    margin: 0 auto
+    padding-right: 32px
+
+
+  &__day
+    letter-spacing: 0.03rem
+
+    &_mob
+      font-size: 30px
+
+      +gt-xs
+        display: none
+
+    &_desk
+      display: none
+
+      +gt-xs
+        display: flex
+
+  &__date
+    display: none
+    font-size: 14px
+
+    +gt-xs
+      display: flex
+
+  &__button
+    position: absolute
+    top: 50%
+    transform: translateY(-70%)
+
+    +gt-xs
+      display: none
+
+    &_prev
+      @include sprite($left-arrow)
+
+    &_next
+      @include sprite($right-arrow)
+      right: 40px

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+  <div class="container">
+    <div class="general-info-wrapper">
+      <section class="general-info">
+        <div class="general-info__clock">
+          <div>
+            <span>9</span>
+            <span>:</span>
+            <span>20</span>
+          </div>
+          <div class="general-info__time-format">AM</div>
+        </div>
+        <div class="general-info__date">Wed. September 3</div>
+        <div class="general-info__location">
+          <div class="general-info__icon"></div>
+          <div class="general-info__place">
+            <div class="general-info__city">Kiev</div>
+            <div class="general-info__country">Ukraine</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="weather">
+      <ul class="weather__list">
+        <li class="weather__item weather__item_today">
+          <div class="weather__header">
+            <div class="settings-button"></div>
+            <div class="weather__day-wrapper">
+              <div class="weather__day weather__day_mob">Today in&nbsp;<span class="weather__city">Kiev</span></div>
+              <div class="weather__day weather__day_desk">Today</div>
+              <div class="weather__date">02 / 09 / 2016</div>
+            </div>
+          </div>
+          <div class="weather-temperature-wrapper">
+            <div class="weather-temperature">
+              <div class="weather-temperature__degree weather-temperature__degree_day">22</div>
+              <div class="weather-temperature__night">
+                <div class="weather-temperature__header">Night</div>
+                <div class="weather-temperature__degree weather-temperature__degree_night">17</div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-cloudness">
+            <div class="weather-cloudness__img weather-cloudness__img_today"></div>
+            <div class="weather-cloudness__description">Rainy</div>
+          </div>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item breadcrumbs__item_active"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+            </ul>
+          </div>
+          <div class="weather-indicators">
+            <ul class="weather-indicators__list">
+              <li class="weather-indicators__item weather-indicators__item_humidity">
+                <div class="weather-indicators__header">77%</div>
+                <div class="weather-indicators__icon weather-indicators__icon_humidity"></div>
+              </li>
+              <li class="weather-indicators__item weather-indicators__item_wind">
+                <div class="weather-indicators__header">4 mph</div>
+                <div class="weather-indicators__icon weather-indicators__icon_wind">NW</div>
+              </li>
+              <li class="weather-indicators__item weather-indicators__item_moon">
+                <div class="weather-indicators__header">Moon</div>
+                <div class="weather-indicators__icon weather-indicators__icon_moon"></div>
+              </li>
+            </ul>
+          </div>
+          <a href="#" target="_self" class="weather__button weather__button_prev"></a>
+          <a href="#" target="_self" class="weather__button weather__button_next"></a>
+        </li>
+        <li class="weather__item weather__item_tomorrow">
+          <div class="weather__header">
+            <div class="weather__day-wrapper">
+              <div class="weather__day weather__day_mob">Tomorrow in<span class="weather__city">Kiev</span></div>
+              <div class="weather__day weather__day_desk">Tomorrow</div>
+              <div class="weather__date">03 / 09 / 2016</div>
+            </div>
+          </div>
+          <div class="weather-temperature-wrapper">
+            <div class="weather-temperature">
+              <div class="weather-temperature__degree weather-temperature__degree_day">-9</div>
+              <div class="weather-temperature__night">
+                <div class="weather-temperature__header">Night</div>
+                <div class="weather-temperature__degree weather-temperature__degree_night">-11</div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-cloudness">
+            <div class="weather-cloudness__img weather-cloudness__img_tomorrow"></div>
+            <div class="weather-cloudness__description">Sunny</div>
+          </div>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item breadcrumbs__item_active"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+            </ul>
+          </div>
+          <div class="weather-indicators">
+            <ul class="weather-indicators__list">
+              <li class="weather-indicators__item weather-indicators__item_humidity">
+                <div class="weather-indicators__header">77%</div>
+                <div class="weather-indicators__icon weather-indicators__icon_humidity"></div>
+              </li>
+              <li class="weather-indicators__item weather-indicators__item_wind">
+                <div class="weather-indicators__header">4 mph</div>
+                <div class="weather-indicators__icon weather-indicators__icon_wind">NW</div>
+              </li>
+              <li class="weather-indicators__item weather-indicators__item_moon">
+                <div class="weather-indicators__header">Moon</div>
+                <div class="weather-indicators__icon weather-indicators__icon_moon"></div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="weather__item weather__item_after_tomorrow">
+          <div class="weather__header">
+            <div class="weather__day-wrapper">
+              <div class="weather__day weather__day_mob">Monday in<span class="weather__city">Kiev</span></div>
+              <div class="weather__day weather__day_desk">Monday</div>
+              <div class="weather__date">04 / 09 / 2016</div>
+            </div>
+          </div>
+          <div class="weather-temperature-wrapper">
+            <div class="weather-temperature">
+              <div class="weather-temperature__degree weather-temperature__degree_day">14</div>
+              <div class="weather-temperature__night">
+                <div class="weather-temperature__header">Night</div>
+                <div class="weather-temperature__degree weather-temperature__degree_night">7</div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-cloudness">
+            <div class="weather-cloudness__img weather-cloudness__img_after_tomorrow"></div>
+            <div class="weather-cloudness__description">Fog</div>
+          </div>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item breadcrumbs__item_active"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+              <li class="breadcrumbs__item"></li>
+            </ul>
+          </div>
+          <div class="weather-indicators">
+            <ul class="weather-indicators__list">
+              <li class="weather-indicators__item weather-indicators__item_humidity">
+                <div class="weather-indicators__header">77%</div>
+                <div class="weather-indicators__icon weather-indicators__icon_humidity"></div>
+              </li>
+              <li class="weather-indicators__item weather-indicators__item_wind">
+                <div class="weather-indicators__header">4 mph</div>
+                <div class="weather-indicators__icon weather-indicators__icon_wind">NW</div>
+              </li>
+              <li class="weather-indicators__item weather-indicators__item_moon">
+                <div class="weather-indicators__header">Moon</div>
+                <div class="weather-indicators__icon weather-indicators__icon_moon"></div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  </body>
+</html>

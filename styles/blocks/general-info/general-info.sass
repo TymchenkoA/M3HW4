@@ -1,0 +1,62 @@
+.general-info-wrapper
+  background-color: $black
+  display: none
+
+  +sm
+    display: flex
+    flex-basis: 160px
+
+  +gt-sm
+    display: flex
+    flex-basis: 36%
+    padding: 20px
+    align-items: center
+
+.general-info
+  +sm
+    display: flex
+    flex-grow: 1
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 10px 40px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+  +gt-sm
+    flex-direction: column
+    flex-grow: 0
+    padding: 0
+    margin: 0 auto
+    align-items: flex-start
+    border-bottom: none
+
+  &__clock
+    font-size: 140px
+    word-spacing: -1.7rem
+    display: flex
+    flex-direction: row
+
+  &__time-format
+    font-size: 24px
+    margin-top: 20px
+    margin-left: 10px
+
+  &__date
+    +gt-sm
+      margin: 20px 0 50px 0
+
+  &__location
+    display: flex
+    flex-direction: row
+
+  &__icon
+    @include sprite($location-small)
+    margin-right: 10px
+
+  &__place
+    display: flex
+    flex-direction: column
+
+  &__country
+    font-size: 14px
+    margin-top: 5px

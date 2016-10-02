@@ -1,0 +1,115 @@
+@mixin xs
+  @media (max-width: 767px)
+    @content
+
+@mixin xsl
+  @media (max-width: 767px) and (orientation: landscape)
+    @content
+
+@mixin xsp
+  @media (max-width: 767px) and (orientation: portrait)
+    @content
+
+
+@mixin gt-xs
+  @media (min-width: 768px)
+    @content
+
+@mixin gt-xs-l
+  @media (min-width: 768px) and (orientation: landscape)
+    @content
+
+@mixin gt-xs-p
+  @media (min-width: 768px) and (orientation: portrait)
+    @content
+
+
+@mixin sm
+  @media (min-width: 768px) and (max-width: 1023px)
+    @content
+
+@mixin sml
+  @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape)
+    @content
+
+@mixin smp
+  @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait)
+    @content
+
+
+@mixin gt-sm
+  @media (min-width: 1024px)
+    @content
+
+@mixin gt-sm-l
+  @media (min-width: 1024px) and (orientation: landscape)
+    @content
+
+@mixin gt-sm-p
+  @media (min-width: 1024px) and (orientation: portrait)
+    @content
+
+//
+//@mixin md
+//  @media (min-width: 1024px) and (max-width: 1279px)
+//    @content
+//
+//@mixin mdl
+//  @media (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape)
+//    @content
+//
+//@mixin mdp
+//  @media (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait)
+//    @content
+//
+//
+//@mixin gt-md
+//  @media (min-width: 1280px)
+//    @content
+//
+//@mixin gt-md-l
+//  @media (min-width: 1280px) and (orientation: landscape)
+//    @content
+//
+//@mixin gt-md-p
+//  @media (min-width: 1280px) and (orientation: portrait)
+//    @content
+//
+//
+//@mixin lg
+//  @media (min-width: 1280px) and (max-width: 1919px)
+//    @content
+//
+//@mixin lgl
+//  @media (min-width: 1280px) and (max-width: 1919px) and (orientation: landscape)
+//    @content
+//
+//@mixin lgp
+//  @media (min-width: 1280px) and (max-width: 1919px) and (orientation: portrait)
+//    @content
+//
+//
+//@mixin gt-lg
+//  @media (min-width: 1920px)
+//    @content
+//
+//@mixin gt-lg-l
+//  @media (min-width: 1920px) and (orientation: landscape)
+//    @content
+//
+//@mixin gt-lg-p
+//  @media (min-width: 1920px) and (orientation: portrait)
+//    @content
+//
+//
+//@mixin xl
+//  @media (min-width: 1920px)
+//    @content
+//
+//@mixin xll
+//  @media (min-width: 1920px) and (orientation: landscape)
+//    @content
+//
+//@mixin xlp
+//  @media (min-width: 1920px) and (orientation: portrait)
+//    @content

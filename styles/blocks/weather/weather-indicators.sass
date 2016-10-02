@@ -1,0 +1,61 @@
+.weather-indicators
+  flex-basis: 21%
+  display: flex
+  align-items: center
+  flex-grow: 1
+
+  +gt-xs
+    flex-basis: 26%
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    flex-grow: 1
+    flex-direction: row
+    justify-content: space-between
+
+    +gt-xs
+      justify-content: space-around
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    &_humidity
+      +gt-xs
+        display: none
+
+  &__header
+    margin-bottom: 20px
+
+    +gt-xs
+      margin-bottom: 30px
+
+  &__icon
+    &_humidity
+      @include sprite($drop2)
+
+    &_wind
+      @include sprite($wind-direction-nw-crop)
+      text-align: center
+      line-height: 61px
+
+      +gt-xs
+        @include sprite($wind-direction-nw-small)
+        line-height: 48px
+        font-size: 12px
+
+    &_moon
+      width: 55px
+      height: 55px
+      border-radius: 50%
+      border: 2px solid $white
+
+      +gt-xs
+        width: 32px
+        height: 32px
+        margin: 0 0 8px 8px
+        background-color: $white

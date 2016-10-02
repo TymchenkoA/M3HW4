@@ -1,0 +1,31 @@
+@import './media'
+
+html, body
+  min-width: 360px
+  font-family: Lintel, Helvetica, Arial, sans-serif
+  font-size: 24px
+  font-weight: 400
+  color: $white
+
+*
+  outline: none
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  &:hover
+      text-decoration: none
+
+.container
+  display: flex
+  flex-direction: column
+  height: 100vh
+
+  +gt-sm
+    flex-direction: row
+
+.settings-button
+  @include sprite($settings-button)
+
+  +gt-xs
+    display: none
